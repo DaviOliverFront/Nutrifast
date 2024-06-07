@@ -39,7 +39,7 @@ class CampoDeTexto extends StatelessWidget {
                   borderSide: BorderSide(color: Colors.blueGrey)),
               fillColor: Colors.white,
               filled: true,
-              contentPadding: const EdgeInsets.all(20),
+              contentPadding: const EdgeInsets.all(15),
             ),
           ),
         ],

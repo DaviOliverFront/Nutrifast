@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nutrifast/widgets/botao.dart';
 import 'package:nutrifast/widgets/campo_texto.dart';
 
 class LoginPage extends StatelessWidget {
@@ -28,12 +29,36 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(height: 70),
                 const CampoDeTexto(
                     nomeCampoDeTexto: 'Email',
                     nomeEspacoReservado: 'Digite seu email'),
+                const SizedBox(height: 5),
                 const CampoDeTexto(
                     nomeCampoDeTexto: 'Senha',
                     nomeEspacoReservado: 'Digite sua senha'),
+                const SizedBox(height: 5),
+                const Row(
+                  children: [
+                    SizedBox(width: 250),
+                    Text(
+                      "Esqueceu a senha?",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 20),
+                const Botao(
+                  nomeDoBotao: "Login",
+                  cor: Colors.transparent,
+                  corDaFonte: Colors.white,
+                ),
+                const SizedBox(height: 50),
+                const Botao(
+                  nomeDoBotao: "Primeira vez no APP? Cadastre-se",
+                  cor: Colors.white,
+                  corDaFonte: Color.fromRGBO(76, 175, 79, 1),
+                )
               ],
             ),
             Container(
